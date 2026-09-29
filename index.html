@@ -1,0 +1,1719 @@
+<!--
+========================================================
+N.P.A CLOUDS DIGITAL
+Official Website
+Built by: Ngang Precious
+Founder & CEO
+========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="N.P.A Clouds Digital - Custom websites, web apps, maintenance, landing pages and digital solutions."
+  >
+
+  <meta name="author" content="Ngang Precious">
+  <meta name="creator" content="Ngang Precious">
+  <meta name="copyright" content="N.P.A Clouds Digital">
+
+  <title>N.P.A Clouds Digital | Digital Solutions</title>
+
+  <style>
+
+    /* ========================================================
+       N.P.A CLOUDS DIGITAL
+       Website designed and built by Ngang Precious
+       ======================================================== */
+
+    :root {
+      --npa-black: #050505;
+      --npa-dark: #090909;
+      --npa-card: #101010;
+      --npa-card-dark: #0c0c0c;
+      --npa-border: #242424;
+
+      --npa-purple: #7027e8;
+      --npa-purple-light: #8b45ff;
+
+      --npa-white: #ffffff;
+      --npa-gray: #a3a3a3;
+      --npa-gray-light: #bdbdbd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--npa-black);
+      color: var(--npa-white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ========================================================
+       NAVIGATION
+       ======================================================== */
+
+    .npa-navbar {
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(5, 5, 5, 0.95);
+      border-bottom: 1px solid var(--npa-border);
+
+      backdrop-filter: blur(12px);
+    }
+
+    .npa-nav-container {
+      max-width: 1200px;
+      margin: auto;
+
+      padding: 16px 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .npa-logo {
+      width: 170px;
+      height: auto;
+    }
+
+    .npa-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .npa-nav-links a {
+      color: var(--npa-gray-light);
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .npa-nav-links a:hover {
+      color: var(--npa-white);
+    }
+
+    .npa-nav-quote {
+      background: var(--npa-purple);
+      color: white !important;
+
+      padding: 10px 18px;
+      border-radius: 8px;
+    }
+
+    .npa-nav-quote:hover {
+      background: var(--npa-purple-light);
+    }
+
+    /* ========================================================
+       HERO
+       ======================================================== */
+
+    .npa-hero {
+      min-height: 88vh;
+
+      display: flex;
+      align-items: center;
+
+      padding: 90px 25px;
+
+      background:
+        radial-gradient(
+          circle at 75% 35%,
+          rgba(112, 39, 232, 0.20),
+          transparent 35%
+        ),
+        var(--npa-black);
+    }
+
+    .npa-hero-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .npa-badge {
+      display: inline-block;
+
+      padding: 8px 14px;
+      margin-bottom: 20px;
+
+      border: 1px solid rgba(112, 39, 232, 0.5);
+      border-radius: 30px;
+
+      background: rgba(112, 39, 232, 0.10);
+
+      color: #b990ff;
+
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .npa-hero h1 {
+      font-size: clamp(48px, 7vw, 85px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .npa-hero h1 span {
+      color: var(--npa-purple-light);
+    }
+
+    .npa-hero p {
+      max-width: 620px;
+
+      color: var(--npa-gray);
+
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .npa-hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .npa-btn {
+      display: inline-block;
+
+      padding: 14px 24px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+    }
+
+    .npa-btn-primary {
+      background: var(--npa-purple);
+      color: white;
+    }
+
+    .npa-btn-primary:hover {
+      background: var(--npa-purple-light);
+      transform: translateY(-2px);
+    }
+
+    .npa-btn-secondary {
+      border: 1px solid var(--npa-border);
+      background: var(--npa-card);
+
+      color: white;
+    }
+
+    .npa-btn-secondary:hover {
+      border-color: var(--npa-purple);
+    }
+
+    .npa-hero-card {
+      padding: 40px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #151515,
+          #090909
+        );
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 20px;
+
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.5);
+    }
+
+    .npa-hero-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .npa-hero-card p {
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .npa-hero-list {
+      list-style: none;
+    }
+
+    .npa-hero-list li {
+      padding: 12px 0;
+
+      border-bottom: 1px solid var(--npa-border);
+
+      color: var(--npa-gray-light);
+    }
+
+    .npa-hero-list li:last-child {
+      border-bottom: none;
+    }
+
+    .npa-check {
+      color: var(--npa-purple-light);
+      margin-right: 8px;
+    }
+
+    /* ========================================================
+       GENERAL SECTIONS
+       ======================================================== */
+
+    .npa-section {
+      padding: 100px 25px;
+    }
+
+    .npa-section-dark {
+      background: var(--npa-dark);
+    }
+
+    .npa-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .npa-section-heading {
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .npa-section-heading span {
+      color: var(--npa-purple-light);
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .npa-section-heading h2 {
+      font-size: clamp(34px, 5vw, 55px);
+      line-height: 1.1;
+      margin: 12px 0 18px;
+    }
+
+    .npa-section-heading p {
+      color: var(--npa-gray);
+      font-size: 17px;
+    }
+
+    /* ========================================================
+       ABOUT
+       ======================================================== */
+
+    .npa-about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .npa-about-text p {
+      color: var(--npa-gray);
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    .npa-about-box {
+      padding: 35px;
+
+      background: var(--npa-card);
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 16px;
+    }
+
+    .npa-about-box h3 {
+      margin-bottom: 15px;
+      font-size: 25px;
+    }
+
+    .npa-about-box p {
+      color: var(--npa-gray);
+    }
+
+    /* ========================================================
+       SERVICES
+       ======================================================== */
+
+    .npa-services-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .npa-service-card {
+      padding: 30px;
+
+      background: var(--npa-card);
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 15px;
+
+      transition: 0.3s;
+    }
+
+    .npa-service-card:hover {
+      transform: translateY(-5px);
+
+      border-color: var(--npa-purple);
+
+      box-shadow:
+        0 15px 40px rgba(112, 39, 232, 0.12);
+    }
+
+    .npa-service-number {
+      width: 40px;
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 20px;
+
+      background: rgba(112, 39, 232, 0.15);
+
+      color: var(--npa-purple-light);
+
+      border-radius: 10px;
+
+      font-weight: bold;
+    }
+
+    .npa-service-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .npa-service-card p {
+      color: var(--npa-gray);
+      font-size: 15px;
+    }
+
+    /* ========================================================
+       WHY CHOOSE US
+       ======================================================== */
+
+    .npa-why-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 20px;
+    }
+
+    .npa-why-card {
+      padding: 30px;
+
+      background: var(--npa-card-dark);
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 15px;
+    }
+
+    .npa-why-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .npa-why-card p {
+      color: var(--npa-gray);
+      font-size: 14px;
+    }
+
+    /* ========================================================
+       PROCESS
+       ======================================================== */
+
+    .npa-process-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 20px;
+    }
+
+    .npa-process-card {
+      padding: 30px;
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 15px;
+
+      background: var(--npa-black);
+    }
+
+    .npa-process-number {
+      color: var(--npa-purple-light);
+
+      font-size: 14px;
+      font-weight: bold;
+
+      margin-bottom: 15px;
+    }
+
+    .npa-process-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .npa-process-card p {
+      color: var(--npa-gray);
+      font-size: 14px;
+    }
+
+    /* ========================================================
+       CONTACT
+       ======================================================== */
+
+    .npa-contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        0.8fr 1.2fr;
+
+      gap: 50px;
+    }
+
+    .npa-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .npa-contact-item {
+      padding: 22px;
+
+      background: var(--npa-card);
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 12px;
+    }
+
+    .npa-contact-item strong {
+      display: block;
+
+      color: var(--npa-purple-light);
+
+      margin-bottom: 5px;
+    }
+
+    .npa-contact-item span,
+    .npa-contact-item a {
+      color: var(--npa-gray-light);
+    }
+
+    /* ========================================================
+       QUOTE FORM
+       ======================================================== */
+
+    .npa-quote-form {
+      padding: 35px;
+
+      background: var(--npa-card);
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 16px;
+    }
+
+    .npa-form-group {
+      margin-bottom: 18px;
+    }
+
+    .npa-form-group label {
+      display: block;
+
+      margin-bottom: 7px;
+
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .npa-form-group input,
+    .npa-form-group select,
+    .npa-form-group textarea {
+      width: 100%;
+
+      padding: 13px 14px;
+
+      border: 1px solid var(--npa-border);
+
+      border-radius: 8px;
+
+      outline: none;
+
+      background: #080808;
+
+      color: white;
+
+      font-family: inherit;
+
+      transition: 0.3s;
+    }
+
+    .npa-form-group input:focus,
+    .npa-form-group select:focus,
+    .npa-form-group textarea:focus {
+      border-color: var(--npa-purple);
+    }
+
+    .npa-form-group textarea {
+      min-height: 130px;
+
+      resize: vertical;
+    }
+
+    .npa-submit-btn {
+      width: 100%;
+
+      border: none;
+
+      padding: 15px;
+
+      border-radius: 8px;
+
+      background: var(--npa-purple);
+
+      color: white;
+
+      font-weight: bold;
+
+      font-size: 15px;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+    }
+
+    .npa-submit-btn:hover {
+      background: var(--npa-purple-light);
+    }
+
+    .npa-submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .npa-form-message {
+      display: none;
+
+      margin-top: 15px;
+
+      padding: 13px;
+
+      border-radius: 8px;
+
+      text-align: center;
+
+      font-size: 14px;
+    }
+
+    .npa-form-success {
+      display: block;
+
+      background: rgba(34, 197, 94, 0.12);
+
+      border: 1px solid rgba(34, 197, 94, 0.35);
+
+      color: #86efac;
+    }
+
+    .npa-form-error {
+      display: block;
+
+      background: rgba(239, 68, 68, 0.12);
+
+      border: 1px solid rgba(239, 68, 68, 0.35);
+
+      color: #fca5a5;
+    }
+
+    /* ========================================================
+       FOOTER
+       ======================================================== */
+
+    footer {
+      padding: 30px 25px;
+
+      border-top: 1px solid var(--npa-border);
+
+      background: #030303;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      color: var(--npa-gray);
+
+      font-size: 13px;
+    }
+
+    .npa-footer-name {
+      color: var(--npa-purple-light);
+    }
+
+    /* ========================================================
+       RESPONSIVE
+       ======================================================== */
+
+    @media (max-width: 900px) {
+
+      .npa-nav-links {
+        display: none;
+      }
+
+      .npa-hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .npa-about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .npa-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .npa-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .npa-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .npa-contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .npa-logo {
+        width: 145px;
+      }
+
+      .npa-hero {
+        padding: 70px 20px;
+      }
+
+      .npa-section {
+        padding: 70px 20px;
+      }
+
+      .npa-hero h1 {
+        font-size: 48px;
+      }
+
+      .npa-services-grid,
+      .npa-why-grid,
+      .npa-process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .npa-hero-buttons {
+        flex-direction: column;
+      }
+
+      .npa-btn {
+        text-align: center;
+      }
+
+      .npa-quote-form {
+        padding: 25px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ========================================================
+       NAVIGATION
+       ======================================================== -->
+
+  <nav class="npa-navbar">
+
+    <div class="npa-nav-container">
+
+      <a href="#home">
+        <img
+          src="logo.png"
+          alt="N.P.A Clouds Digital Logo"
+          class="npa-logo"
+        >
+      </a>
+
+      <div class="npa-nav-links">
+
+        <a href="#about">About</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#process">Process</a>
+
+        <a href="#contact">Contact</a>
+
+        <a
+          href="#contact"
+          class="npa-nav-quote"
+        >
+          Get a Quote
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ========================================================
+       HERO
+       ======================================================== -->
+
+  <section
+    id="home"
+    class="npa-hero"
+  >
+
+    <div class="npa-hero-container">
+
+      <div>
+
+        <div class="npa-badge">
+          N.P.A CLOUDS DIGITAL
+        </div>
+
+        <h1>
+          We Build Your
+          <span>Digital Future.</span>
+        </h1>
+
+        <p>
+          Custom websites, web applications and digital solutions
+          designed to help businesses build their online presence,
+          attract customers and grow.
+        </p>
+
+        <div class="npa-hero-buttons">
+
+          <a
+            href="#contact"
+            class="npa-btn npa-btn-primary"
+          >
+            Start Your Project
+          </a>
+
+          <a
+            href="#services"
+            class="npa-btn npa-btn-secondary"
+          >
+            View Services
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="npa-hero-card">
+
+        <h3>
+          Digital Solutions. Built for You.
+        </h3>
+
+        <p>
+          We create practical digital solutions based on
+          your business needs.
+        </p>
+
+        <ul class="npa-hero-list">
+
+          <li>
+            <span class="npa-check">✓</span>
+            Custom Website Development
+          </li>
+
+          <li>
+            <span class="npa-check">✓</span>
+            Web Apps & Prototypes
+          </li>
+
+          <li>
+            <span class="npa-check">✓</span>
+            Website Maintenance
+          </li>
+
+          <li>
+            <span class="npa-check">✓</span>
+            Business Digital Solutions
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       ABOUT
+       ======================================================== -->
+
+  <section
+    id="about"
+    class="npa-section npa-section-dark"
+  >
+
+    <div class="npa-container">
+
+      <div class="npa-section-heading">
+
+        <span>About Us</span>
+
+        <h2>
+          Technology that works for your business.
+        </h2>
+
+        <p>
+          We focus on creating modern, practical and
+          easy-to-use digital experiences.
+        </p>
+
+      </div>
+
+
+      <div class="npa-about-grid">
+
+        <div class="npa-about-text">
+
+          <p>
+            N.P.A Clouds Digital is a digital services business
+            focused on helping businesses establish and improve
+            their online presence.
+          </p>
+
+          <p>
+            From a simple professional website to a custom
+            web application or digital system, we build solutions
+            around the specific needs of each client.
+          </p>
+
+          <p>
+            Our goal is simple: create technology that looks
+            professional, works properly and helps your business
+            move forward.
+          </p>
+
+        </div>
+
+
+        <div class="npa-about-box">
+
+          <h3>
+            Built Around Your Business
+          </h3>
+
+          <p>
+            Every business is different. Instead of forcing
+            you into a one-size-fits-all solution, we create
+            digital experiences based on your goals, customers
+            and workflow.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       SERVICES
+       ======================================================== -->
+
+  <section
+    id="services"
+    class="npa-section"
+  >
+
+    <div class="npa-container">
+
+      <div class="npa-section-heading">
+
+        <span>Our Services</span>
+
+        <h2>
+          What We Build
+        </h2>
+
+        <p>
+          Digital services designed to help businesses
+          establish, improve and maintain their online presence.
+        </p>
+
+      </div>
+
+
+      <div class="npa-services-grid">
+
+
+        <div class="npa-service-card">
+
+          <div class="npa-service-number">
+            01
+          </div>
+
+          <h3>
+            Website Development
+          </h3>
+
+          <p>
+            Custom professional websites built around your
+            brand, business and customers.
+          </p>
+
+        </div>
+
+
+        <div class="npa-service-card">
+
+          <div class="npa-service-number">
+            02
+          </div>
+
+          <h3>
+            Website Maintenance
+          </h3>
+
+          <p>
+            Updates, improvements, troubleshooting and
+            ongoing website support.
+          </p>
+
+        </div>
+
+
+        <div class="npa-service-card">
+
+          <div class="npa-service-number">
+            03
+          </div>
+
+          <h3>
+            Web Apps & Prototypes
+          </h3>
+
+          <p>
+            Functional web applications and prototypes
+            designed to demonstrate and validate ideas.
+          </p>
+
+        </div>
+
+
+        <div class="npa-service-card">
+
+          <div class="npa-service-number">
+            04
+          </div>
+
+          <h3>
+            Landing Pages
+          </h3>
+
+          <p>
+            Focused landing pages designed for promotions,
+            services, products and customer conversion.
+          </p>
+
+        </div>
+
+
+        <div class="npa-service-card">
+
+          <div class="npa-service-number">
+            05
+          </div>
+
+          <h3>
+            Website Redesign
+          </h3>
+
+          <p>
+            Modern redesigns that improve appearance,
+            usability and mobile experience.
+          </p>
+
+        </div>
+
+
+        <div class="npa-service-card">
+
+          <div class="npa-service-number">
+            06
+          </div>
+
+          <h3>
+            Digital Solutions
+          </h3>
+
+          <p>
+            Customized digital systems and solutions designed
+            around specific business needs.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       WHY CHOOSE NPA
+       ======================================================== -->
+
+  <section
+    class="npa-section npa-section-dark"
+  >
+
+    <div class="npa-container">
+
+      <div class="npa-section-heading">
+
+        <span>Why N.P.A</span>
+
+        <h2>
+          Built with your goals in mind.
+        </h2>
+
+      </div>
+
+
+      <div class="npa-why-grid">
+
+
+        <div class="npa-why-card">
+
+          <h3>
+            Custom Built
+          </h3>
+
+          <p>
+            Your digital solution is built around your
+            specific business requirements.
+          </p>
+
+        </div>
+
+
+        <div class="npa-why-card">
+
+          <h3>
+            Affordable
+          </h3>
+
+          <p>
+            Professional digital services designed with
+            small and growing businesses in mind.
+          </p>
+
+        </div>
+
+
+        <div class="npa-why-card">
+
+          <h3>
+            Direct Support
+          </h3>
+
+          <p>
+            Work directly with the person building and
+            maintaining your digital solution.
+          </p>
+
+        </div>
+
+
+        <div class="npa-why-card">
+
+          <h3>
+            Built to Grow
+          </h3>
+
+          <p>
+            Solutions can be developed and expanded as
+            your business grows.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       PROCESS
+       ======================================================== -->
+
+  <section
+    id="process"
+    class="npa-section"
+  >
+
+    <div class="npa-container">
+
+      <div class="npa-section-heading">
+
+        <span>Our Process</span>
+
+        <h2>
+          Simple. Clear. Effective.
+        </h2>
+
+        <p>
+          We keep the process straightforward so you know
+          what is happening at every stage.
+        </p>
+
+      </div>
+
+
+      <div class="npa-process-grid">
+
+
+        <div class="npa-process-card">
+
+          <div class="npa-process-number">
+            STEP 01
+          </div>
+
+          <h3>
+            Tell Us
+          </h3>
+
+          <p>
+            Tell us about your business, idea and what
+            you want to build.
+          </p>
+
+        </div>
+
+
+        <div class="npa-process-card">
+
+          <div class="npa-process-number">
+            STEP 02
+          </div>
+
+          <h3>
+            Plan
+          </h3>
+
+          <p>
+            We discuss the requirements, structure and
+            direction of your project.
+          </p>
+
+        </div>
+
+
+        <div class="npa-process-card">
+
+          <div class="npa-process-number">
+            STEP 03
+          </div>
+
+          <h3>
+            Build
+          </h3>
+
+          <p>
+            We develop your website, application or
+            digital solution.
+          </p>
+
+        </div>
+
+
+        <div class="npa-process-card">
+
+          <div class="npa-process-number">
+            STEP 04
+          </div>
+
+          <h3>
+            Launch
+          </h3>
+
+          <p>
+            Your finished digital solution is prepared
+            for customers and users.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       CONTACT + QUOTE FORM
+       ======================================================== -->
+
+  <section
+    id="contact"
+    class="npa-section npa-section-dark"
+  >
+
+    <div class="npa-container">
+
+      <div class="npa-section-heading">
+
+        <span>Contact</span>
+
+        <h2>
+          Let's build something.
+        </h2>
+
+        <p>
+          Tell us what you need and we'll get back to you.
+        </p>
+
+      </div>
+
+
+      <div class="npa-contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="npa-contact-info">
+
+
+          <div class="npa-contact-item">
+
+            <strong>
+              Phone
+            </strong>
+
+            <a href="tel:6678027518">
+              667-802-7518
+            </a>
+
+          </div>
+
+
+          <div class="npa-contact-item">
+
+            <strong>
+              Email
+            </strong>
+
+            <a href="mailto:npadigitals237@gmail.com">
+              npadigitals237@gmail.com
+            </a>
+
+          </div>
+
+
+          <div class="npa-contact-item">
+
+            <strong>
+              Business
+            </strong>
+
+            <span>
+              N.P.A Clouds Digital
+            </span>
+
+          </div>
+
+
+          <div class="npa-contact-item">
+
+            <strong>
+              Founder & CEO
+            </strong>
+
+            <span>
+              Ngang Precious
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- ==================================================
+             FORMSPREE QUOTE FORM
+             ================================================== -->
+
+        <form
+          id="npaQuoteForm"
+          class="npa-quote-form"
+          action="https://formspree.io/f/xjykvwdo"
+          method="POST"
+        >
+
+          <!-- Hidden subject for your email -->
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="N.P.A Clouds Digital - New Quote Request"
+          >
+
+
+          <div class="npa-form-group">
+
+            <label for="npaName">
+              Full Name
+            </label>
+
+            <input
+              type="text"
+              id="npaName"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+
+          </div>
+
+
+          <div class="npa-form-group">
+
+            <label for="npaEmail">
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="npaEmail"
+              name="email"
+              placeholder="you@example.com"
+              required
+            >
+
+          </div>
+
+
+          <div class="npa-form-group">
+
+            <label for="npaPhone">
+              Phone
+            </label>
+
+            <input
+              type="tel"
+              id="npaPhone"
+              name="phone"
+              placeholder="Your phone number"
+            >
+
+          </div>
+
+
+          <div class="npa-form-group">
+
+            <label for="npaService">
+              Service Needed
+            </label>
+
+            <select
+              id="npaService"
+              name="service"
+              required
+            >
+
+              <option value="">
+                Select a service
+              </option>
+
+              <option value="Website Development">
+                Website Development
+              </option>
+
+              <option value="Website Maintenance">
+                Website Maintenance
+              </option>
+
+              <option value="Web App / Prototype">
+                Web App / Prototype
+              </option>
+
+              <option value="Landing Page">
+                Landing Page
+              </option>
+
+              <option value="Website Redesign">
+                Website Redesign
+              </option>
+
+              <option value="Digital Solution">
+                Digital Solution
+              </option>
+
+              <option value="Other">
+                Other
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="npa-form-group">
+
+            <label for="npaMessage">
+              Project Details
+            </label>
+
+            <textarea
+              id="npaMessage"
+              name="message"
+              placeholder="Tell us about your project..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            id="npaSubmitButton"
+            class="npa-submit-btn"
+          >
+            Send Request
+          </button>
+
+
+          <div
+            id="npaFormMessage"
+            class="npa-form-message"
+          ></div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+
+  <footer>
+
+    <div>
+      © 2026 N.P.A Clouds Digital
+    </div>
+
+    <div>
+      Built by
+      <strong class="npa-footer-name">
+        Ngang Precious
+      </strong>
+    </div>
+
+  </footer>
+
+
+  <!-- ========================================================
+       JAVASCRIPT
+       N.P.A CLOUDS DIGITAL
+       ======================================================== -->
+
+  <script>
+
+    const npaQuoteForm =
+      document.getElementById("npaQuoteForm");
+
+    const npaFormMessage =
+      document.getElementById("npaFormMessage");
+
+    const npaSubmitButton =
+      document.getElementById("npaSubmitButton");
+
+
+    npaQuoteForm.addEventListener(
+      "submit",
+      async function(event) {
+
+        event.preventDefault();
+
+
+        /* Clear previous message */
+
+        npaFormMessage.className =
+          "npa-form-message";
+
+        npaFormMessage.textContent = "";
+
+
+        /* Prevent multiple submissions */
+
+        npaSubmitButton.disabled = true;
+
+        npaSubmitButton.textContent =
+          "Sending Request...";
+
+
+        try {
+
+          const npaFormData =
+            new FormData(npaQuoteForm);
+
+
+          const npaResponse =
+            await fetch(
+              npaQuoteForm.action,
+              {
+                method: "POST",
+
+                body: npaFormData,
+
+                headers: {
+                  "Accept": "application/json"
+                }
+              }
+            );
+
+
+          if (npaResponse.ok) {
+
+            /*
+              SUCCESS
+            */
+
+            npaFormMessage.className =
+              "npa-form-message npa-form-success";
+
+            npaFormMessage.innerHTML =
+              "✓ Request Sent!<br>Thank you for contacting N.P.A Clouds Digital. We'll get back to you soon.";
+
+
+            /* Clear the form */
+
+            npaQuoteForm.reset();
+
+
+          } else {
+
+            /*
+              FORMSPREE RETURNED AN ERROR
+            */
+
+            npaFormMessage.className =
+              "npa-form-message npa-form-error";
+
+            npaFormMessage.textContent =
+              "Something went wrong. Please try again or contact us directly.";
+
+          }
+
+
+        } catch (error) {
+
+          /*
+            CONNECTION ERROR
+          */
+
+          npaFormMessage.className =
+            "npa-form-message npa-form-error";
+
+          npaFormMessage.textContent =
+            "Unable to send the request. Please try again or email us directly.";
+
+        }
+
+
+        /* Restore button */
+
+        npaSubmitButton.disabled = false;
+
+        npaSubmitButton.textContent =
+          "Send Request";
+
+      }
+    );
+
+  </script>
+
+
+</body>
+</html>
